@@ -1,0 +1,185 @@
+
+  .chat {
+        display: grid;
+        padding: 0.1rem;
+        grid-template-columns: 1fr;
+      
+        @include tablet {
+          display: grid;
+          grid-template-columns: 1fr 2.5fr;
+          gap: 10px
+        }
+    
+    &__photo{
+        padding: 0.5rem;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;             
+    } 
+    &__lista{
+        width: 100%;
+        @include tablet{
+            display: block;
+            display: grid;
+            grid-template-columns: 1.5fr;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 88vh;
+            width: 100%;
+        }
+    }
+    &__toggle{               
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        color: $saddlebrown;
+        border: none;
+        margin-top: 1.5625rem;    
+        @include tablet {
+            display: none;
+        }    
+            }
+    &__container{
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        color: $lightgray;        
+        display: flex;        
+        justify-content: space-between;
+        border-bottom: 0.5px $black solid;      
+        width: 100%;     
+    } 
+   &__conversaciones{
+    @include tablet  {
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+   }
+   
+    &__item{
+       display: flex;
+       width: 100%; 
+       justify-content: space-between;
+    }   
+    &__text{
+        margin-top: 1.5rem; 
+        color: $black;           
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    
+    &__time {
+        font-weight: bold;
+        font-size: .65rem;
+        
+
+    }
+    &__name{
+        color: $black;
+        font-size: 1.1rem;
+    }
+
+    &__extra{   
+        margin-top: 1.5rem;    
+       
+        padding-right: 0.75rem;     
+    }
+    &__amount{
+        color: $mintcream;
+        background-color: $blueviolet;
+        display: block;
+        margin: .5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        text-align: center;
+    }    
+    &__boxBottom{                          
+        height: 90vh;
+        margin: auto;
+        width: 100% ; 
+        background-color: $lightgray;             
+       @include tablet {
+        display: grid;
+        grid-template-columns: 2fr;
+       }
+
+    }
+    &__profile{
+        margin-top: 1rem;
+        display: flex;
+        border-bottom: 0rem $darkgray solid;          
+        height: 5.125rem;
+        width: 100%;                     
+        align-items: center; 
+        justify-content: space-between;                
+    }
+    &__chatBox{
+        height: 70vh;
+        padding: 1rem;
+        overflow-y: auto;
+    }
+    &__myMessage{
+        padding: .35rem;
+        margin: 0.1875rem;
+        background-color: $lightgray;
+        max-width:100%;
+        border-radius: 0.3125rem;          
+        &:hover {
+            background-color: $silver;
+        }      
+    }
+    &__userMessage{        
+        padding: .15rem;        
+        background-color: $darkgray;
+        border-radius: 0.3125rem;
+        margin: 0.2rem;                  
+        max-width:100%;
+        text-align: right; 
+        &:hover {
+            background-color: $lightslategray;
+        }
+    }
+    &__textBox{         
+        width: 95%;
+        height: 3vh;
+        position: relative;
+        display: flex;
+        background-color: $mintcream;
+        justify-content: space-between;    
+        align-items: center;          
+        padding: 0.25rem;         
+        margin-left: 0.8rem;     
+        margin-right: .8rem;            
+        border: none;        
+        color: $lightgray;
+    } 
+   
+    
+    &__sendIcon {        
+        display: flex;
+        align-items: end;
+        cursor: pointer;
+
+    }   
+}
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color:$lightgray;
+}  
+::-webkit-scrollbar-thumb {
+    background-color: $mintcream;
+    border-radius: 0.3125rem;
+} 
+::-webkit-scrollbar-thumb:hover {
+    background-color: $darkgray;
+}
+.contenedor_chat {
+    width: 100%;
+}

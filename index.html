@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\main.css"> 
+
+    <title>Chat soporte</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__main">
+        <div class="header__titulo">  
+        <h1>Inicio Chat Contacto</h1>
+        </div>         
+        <div class="header__opciones">                           
+                <button class="header__button"><svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>  
+                </button>                
+            <div class="header__menu">                
+                <a class="header__item" href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-paperclip" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M15 7l-6.5 6.5a1.5 1.5 0 0 0 3 3l6.5 -6.5a3 3 0 0 0 -6 -6l-6.5 6.5a4.5 4.5 0 0 0 9 9l6.5 -6.5" />
+                  </svg>Adjuntar</a>
+               <a class="header__item"  href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                    <circle cx="12" cy="13" r="3" />
+                  </svg>Imagen</a>
+                <a class="header__item" href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-movie" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <line x1="8" y1="4" x2="8" y2="20" />
+                    <line x1="16" y1="4" x2="16" y2="20" />
+                    <line x1="4" y1="8" x2="8" y2="8" />
+                    <line x1="4" y1="16" x2="8" y2="16" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="16" y1="8" x2="20" y2="8" />
+                    <line x1="16" y1="16" x2="20" y2="16" />
+                  </svg>Video </a>
+                <a class="header__item" href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="4" width="18" height="4" rx="2" />
+                    <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+                    <line x1="10" y1="12" x2="14" y2="12" />
+                  </svg>Archivar </a>
+                <a class="header__item" href="">
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-2" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3" />
+                    <line x1="8" y1="9" x2="16" y2="9" />
+                    <line x1="8" y1="13" x2="14" y2="13" />
+                  </svg>Nueva conversación</a>
+            </div> 
+    </div>
+</div>
+            <div class="header__buscar">
+                <input class="header__searchBox" type="text" placeholder="Buscar conversación">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>        
+            </div> 
+    </header>  
+    <main class="chat"> 
+        <div class="chat__toggle">
+            <div class="chat__subtitle"><h3>Conversaciones</h3></div>
+    
+            <button><svg xmlns="http://www.w3.org/2000/svg" class="chat__toggle-btn toggle-btn" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+            </svg> 
+            </button>       
+            </div>  
+        <div class="chat__conversaciones">
+        <div class="chat__container">
+       
+            <div class="contenedor_chat">   
+            <ul class="chat__lista">
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/542/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Anibal Roman </h2>
+                        <p class="chat__text">Anibal: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">18:30 PM</div>
+                        <div class="chat__amount">4</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/522/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Julio León</h2>
+                        <p class="chat__text">Julio: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">14:30 PM</div>
+                        <div class="chat__amount">10</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/530/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Pedro Valdez</h2>
+                        <p class="chat__text">Pedro: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">15:30 PM</div>
+                        <div class="chat__amount">3</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">12:13 PM</div>
+                        <div class="chat__amount">2</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">12:13 PM</div>
+                        <div class="chat__amount">2</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">12:13 PM</div>
+                        <div class="chat__amount">2</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">12:13 PM</div>
+                        <div class="chat__amount">2</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">12:13 PM</div>
+                        <div class="chat__amount">2</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">12:13 PM</div>
+                        <div class="chat__amount">2</div>
+                    </div>
+                </div>
+                </li>
+                
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">8:13 AM</div>
+                        <div class="chat__amount">1</div>
+                    </div>
+                </div>
+                </li>
+                <li class="chat__item chat">
+                    <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">               
+                <div class="chat__container">
+                    <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__text">Juan: Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="chat__extra">
+                        <div class="chat__time">8:13 AM</div>
+                        <div class="chat__amount">1</div>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            <div class="chat__boxBottom">
+                <div class="chat__profile">
+                <img class="chat__photo" src="https://picsum.photos/id/548/128/128" alt="profile">                         
+                <div class="chat__info">
+                        <h2 class="chat__name">Juan Perez</h2>
+                        <p class="chat__status">En linea</p>
+                        
+                </div>
+                
+            <div class="chat__icons">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>   
+           
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="1" />
+                <circle cx="12" cy="19" r="1" />
+                <circle cx="12" cy="5" r="1" />
+            </svg>                    
+            </div>
+        </div>
+            <div class="chat__chatBox">   
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>     
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>     
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>     
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>               
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>     
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>     
+                <div class="chat__myMessage">
+                    <p>Hello<br><span> 11:46</span></p>
+                </div>  
+                <div class="chat__userMessage">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore?<br><span> 11:46</span></p>
+                </div>          
+            </div>
+            <div class="chat__textBox">  
+                    <input class="chat__textBox" type="text" placeholder="Escribe tu mensaje">
+                                <svg class="chat__sendIcon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                    <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                  </svg>       
+                    </div>             
+            </div>
+        </main>        
+    <footer>
+        <p class="rights">Todos los derechos reservados <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173" />
+          </svg></p>
+    </footer>
+    <script src="assets\js\script.js" as="script"></script>
+</body> 
+</html>

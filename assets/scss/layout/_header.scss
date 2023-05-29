@@ -1,0 +1,88 @@
+.header {
+    background-color: $lightgray;
+    color: $saddlebrown;
+    width: auto;
+    height: 8vh;
+    text-decoration: none;
+    
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.85rem;
+      }   
+    &__button{
+      background-color: $lightgray;
+      color: white;
+      padding: 0.2rem;
+      font-size: 16px;
+      border: none;
+      border-radius: 0.3125rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $darkgray;
+        display: block;
+          }
+      }
+    
+    &__menu{
+      display: none;
+      position: absolute;
+      border-radius: 0.9375rem;
+      background-color: #f9f9f9;
+      margin-right: 6.875rem;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 0;
+      transform: translateX(100%);
+      opacity: 0.7;  
+    } 
+    
+    &__opciones {
+      position: relative;
+      display: inline-block;
+      &:hover .header__menu{
+        display: block;
+      }   
+    }
+    
+    &__item{
+      float: none;
+      color: black;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      border-radius: 0.9375rem;
+      &:hover {
+        background-color:$darkgray;
+        color: $mintcream;        
+      }
+    }
+   
+    &__buscar {
+      width: 100%;
+      position: relative;        
+      display: flex;
+      background-color: $mintcream;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0.9375rem;
+      color: $lightgray;
+      height: 8vh;        
+    }
+    
+    &__buscar {
+      width: 100%; 
+      padding-top: 0.5rem;
+      height: 3vh;
+    }
+    &__titulo{
+      text-decoration: none;
+    }
+    &__searchBox {     
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 0.175rem;
+    }
+  }
